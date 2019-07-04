@@ -7,6 +7,58 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        /*if / else について
+        条件 等価 : ===, 
+            否定 : !==
+
+            == より === を使った方が良い
+            ex.
+              23 == '23' -> true
+              23 === '23' -> false
+        
+        条件が変数の場合
+            Falsy values
+                以下の値の場合、falseとして扱われる
+                undefined, null, 0, '', NaN
+
+            Truthy values
+                Falsy valus以外はtureとして扱われる
+        
+        条件のBoolean Logic
+            AND : &&
+            OR  : ||
+            NOT : !
+        */
+        var testStatus = 'ok';
+        if (testStatus === 'ok') {
+            console.log('ok status');
+        } else if (testStatus === 'Bad') {
+            console.log('bad status');
+
+        } else {
+            console.log('Else status')
+        }
+
+        //Thernary Operator(条件演算子)
+        //条件 ? True処理: False処理
+        var age = 15;
+        var isAdult = age >= 20 ? '成年': '未成年';
+        console.log('Jane is ' + isAdult);
+
+        //Switch statement
+        var A = 'C'
+        switch (A) {
+            case 'B':
+                console.log('Bの場合')
+                break;
+            case 2:
+            case 'C':
+                console.log('2 or Cの場合')
+                break;
+            default:
+                console.log('条件に合わない')
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        //例1
+        function calcfunc(test_num){
+            return 100 - test_num;
+        }
+
+        var test = calcfunc(20);
+        console.log(test); //80
+
+        //例2
+        var test2 = function(arg1, arg2) {
+            return arg1 - arg2;
+            
+        }
+
+        console.log(test2(100, 20)); //80
+    </script>
+</body>
+</html>
